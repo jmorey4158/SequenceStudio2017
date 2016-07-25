@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9404E84C-9743-4904-9011-C8D6E3C30C88}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SequenceStudio</RootNamespace>
+    <AssemblyName>SequenceStudio</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EF Classes\EF Classes.cs" />
+    <Compile Include="NCBI Methods\AddEFetchQueryToDb.cs" />
+    <Compile Include="NCBI Methods\FastaToNcbiSequence.cs" />
+    <Compile Include="NCBI Methods\GetEFetchResults.cs" />
+    <Compile Include="NCBI Methods\GetESearchResults.cs" />
+    <Compile Include="NCBI Methods\NcbiEndToEnd.cs" />
+    <Compile Include="NCBI Methods\ParseSearchResult.cs" />
+    <Compile Include="NCBI Methods\ReadFastaXml.cs" />
+    <Compile Include="Ncbi Types\EFetchQuery.cs" />
+    <Compile Include="Ncbi Types\ESearchQuery.cs" />
+    <Compile Include="Sequence Events\SequenceEvents.cs" />
+    <Compile Include="Sequence Methods\AddNcbiSequencesToDb.cs" />
+    <Compile Include="Ncbi Types\NcbiSequence.cs" />
+    <Compile Include="EF Classes\SequenceDB.cs" />
+    <Compile Include="NCBI Methods\ParseFastaFile.cs" />
+    <Compile Include="NCBI Methods\ParseFastaXml.cs" />
+    <Compile Include="Sequence Methods\PopulateOrfs.cs" />
+    <Compile Include="Sequence Types\AminAcids.cs" />
+    <Compile Include="Sequence Types\AminoAcidStruct.cs" />
+    <Compile Include="Sequence Types\ConsensusDNA.cs" />
+    <Compile Include="Sequence Types\Constants.cs" />
+    <Compile Include="Sequence Types\DnaMetadata.cs" />
+    <Compile Include="Sequence Types\SequenceEnums.cs" />
+    <Compile Include="Sequence Types\Match.cs" />
+    <Compile Include="Sequence Types\Orfs.cs" />
+    <Compile Include="Sequence Types\PolypeptideMetadata.cs" />
+    <Compile Include="Sequence Types\RnaMetadata.cs" />
+    <Compile Include="Sequence Types\StrandGroup.cs" />
+    <Compile Include="Sequence Interfaces\MatchInterfaces.cs" />
+    <Compile Include="NCBI Methods\ReadFastAFile.cs" />
+    <Compile Include="Ncbi Types\DbInfoClasses.cs" />
+    <Compile Include="Ncbi Types\NcbiSearchResult.cs" />
+    <Compile Include="Ncbi Types\FastAClasses.cs" />
+    <Compile Include="Ncbi Types\NcbiConstants.cs" />
+    <Compile Include="Sequence Types\RegexPatterns.cs" />
+    <Compile Include="Sequence Types\DNA.cs" />
+    <Compile Include="Sequence Types\Polypeptide.cs" />
+    <Compile Include="Sequence Types\RNA.cs" />
+    <Compile Include="Sequence Types\SequenceBase.cs" />
+    <Compile Include="Exceptions\SequenceException.cs" />
+    <Compile Include="Sequence Types\SequenceMetadata.cs" />
+    <Compile Include="Sequence Types\Substrand.cs" />
+    <Compile Include="Sequence Types\UnitPatterns.cs" />
+    <Compile Include="Sequence Interfaces\SequenceInterfaces.cs" />
+    <Compile Include="Ncbi Interfaces\NcbiInterfaces.cs" />
+    <Compile Include="NCBI Methods\FindNcbiMatches.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sequence Methods\CalcMolWeight.cs" />
+    <Compile Include="Sequence Methods\CreateSequence.cs" />
+    <Compile Include="Sequence Methods\CompareISequenceToDb.cs" />
+    <Compile Include="Sequence Methods\FindContiguousMatches.cs" />
+    <Compile Include="Sequence Methods\FindExactMatch.cs" />
+    <Compile Include="Sequence Methods\FindMatchesDelegate.cs" />
+    <Compile Include="Sequence Methods\FindNcbiMatches.cs" />
+    <Compile Include="Sequence Methods\GenerateRandomStrand.cs" />
+    <Compile Include="Sequence Methods\FindOrfs.cs" />
+    <Compile Include="Sequence Methods\FindPercentageMatches.cs" />
+    <Compile Include="Sequence Methods\GetDbMatch.cs" />
+    <Compile Include="Sequence Methods\GetISequenceHash.cs" />
+    <Compile Include="Sequence Methods\GetMatchHash.cs" />
+    <Compile Include="Sequence Methods\CompareIMatchToDb.cs" />
+    <Compile Include="Sequence Methods\GetMolecularWeight.cs" />
+    <Compile Include="Sequence Methods\GetResidueStatistics.cs" />
+    <Compile Include="Sequence Methods\GetComplimentStrands.cs" />
+    <Compile Include="Sequence Methods\GetTranscript.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
