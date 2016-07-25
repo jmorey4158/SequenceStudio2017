@@ -1,0 +1,14 @@
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\UnitTestSequenceStudio\bin\Debug\UnitTestSequenceStudio.dll
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\UnitTestSequenceStudio\bin\Debug\UnitTestSequenceStudio.pdb
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\UnitTestSequenceStudio\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\UnitTestSequenceStudio\bin\Debug\SequenceStudio.dll
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\UnitTestSequenceStudio\bin\Debug\SequenceStudio.pdb
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\UnitTestSequenceStudio\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\UnitTestSequenceStudio\obj\Debug\UnitTestSequenceStudio.csprojResolveAssemblyReference.cache
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\UnitTestSequenceStudio\obj\Debug\UnitTestSequenceStudio.dll
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\UnitTestSequenceStudio\obj\Debug\UnitTestSequenceStudio.pdb
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\UnitTestSequenceStudio\bin\Debug\UnitTestSequenceStudio.dll.config
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\UnitTestSequenceStudio\bin\Debug\EntityFramework.dll
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\UnitTestSequenceStudio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\UnitTestSequenceStudio\bin\Debug\EntityFramework.xml
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\UnitTestSequenceStudio\bin\Debug\EntityFramework.SqlServer.xml

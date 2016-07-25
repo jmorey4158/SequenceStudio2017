@@ -1,0 +1,12 @@
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\TestSequenceStudio\bin\Debug\TestSequenceStudio.exe.config
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\TestSequenceStudio\bin\Debug\TestSequenceStudio.exe
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\TestSequenceStudio\bin\Debug\TestSequenceStudio.pdb
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\TestSequenceStudio\bin\Debug\SequenceStudio.dll
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\TestSequenceStudio\bin\Debug\SequenceStudio.pdb
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\TestSequenceStudio\obj\Debug\TestSequenceStudio.csprojResolveAssemblyReference.cache
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\TestSequenceStudio\obj\Debug\TestSequenceStudio.exe
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\TestSequenceStudio\obj\Debug\TestSequenceStudio.pdb
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\TestSequenceStudio\bin\Debug\EntityFramework.dll
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\TestSequenceStudio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\TestSequenceStudio\bin\Debug\EntityFramework.xml
+C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\TestSequenceStudio\bin\Debug\EntityFramework.SqlServer.xml
