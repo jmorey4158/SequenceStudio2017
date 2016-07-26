@@ -48,15 +48,18 @@ resource-intensive operations as you can shake the proverbial stick at. Awesome.
 
 <h3>New C# 6.0 Features</h3>
 <p>C# is always getting better and better and I want to make sure I am using the great new features. Here are some of them:</p>
-<h4>String Interpolation</h4>
-<h4>Expression Body Syntax</h4>
-
+<ul>
+<li>String Interpolation</li>
+<li>Expression Body Syntax</li>
+</ul>
 
 <h3>Good Ol' C# Features</h3>
 <p>Of course, there are a ton of features that have been part of C# for years, but are still a staple of good developement. The Oldies But Goodies.Here are some of them I used throughout the project:</p>
-<h4>LINQ and Lambda Expressions</h4>
-<h4>Regex and Regular Expressions</h4>
-<h4>Generics</h4>
+<ul>
+<li>LINQ and Lambda Expressions</li>
+<li>Regex and Regular Expressions</li>
+<li>Generics</li>
+</ul>
 
 <h2>Special Thanks to Bob Tabor and DevU.com</h2>
 <p>Shout-Out to Bob Tabor of DevU.com, especially his series on Application Architecture. 
