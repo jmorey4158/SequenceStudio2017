@@ -23,7 +23,13 @@ this design pattern. </p>
 
 <h3>Interfaces As Objects</h3>
 <p>This Pattern is also called by other names, but I like this one. I used Interface Definitions and passed the Interfaces into Methods as params and 
-returned tham as values from Methods. This solved a number of DRY (Don't Repeat Yourself) problems I was having i the last version.
+returned tham as values from Methods. This solved a number of DRY (Don't Repeat Yourself) problems I was having in the last version.</p>
+
+<h3>Asynchronous Methods</h3>
+<p>I'm not sure how I got this far without using async / await pattern, but there it is. In this upgrade of Sequence Studio, 
+as part of the re-architecture, I refactored a lot of my cross-boundary methods as asyncronous. But I did so strategically.
+
+<p>I created what I call the "Async Wall" pattern where I use a public method that takes in only POCOs form the Presentation Layer (wht's this? See Devu.com Application architecture). This method then calls private / protected mehods that take in native types and custom types and hand back POCOs. This way I can assure that the inputs from the Presentation Layer or Application Service Layer are valid and that I am handing back valid objects.</p>
 
 
 <h2>Special Thanks to Bob Tabor and DevU.com</h2>
