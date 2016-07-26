@@ -13,6 +13,7 @@ The code retrieves, stores and manipulates DNA, RNA, and Poypeptide (Protein) se
 <p>The local storage is handled using the Entity Framework. I made this coie (over ADO.NET and T-SQL) because I was doing a
 Code-First rendition and the data set is small. This way I could specify the POCOs and let EF create the SQL procs for me. 
 Lazy? Maybe, but query performance wasn't a priority for this project.</p>
+<p>However, the real beauty of this approch is that I can easily and smoothly point to a network DB, or one in the cloud, like an Azure DB, an not have to re-code. Awesome!</p>
 
 <h3>Delegates</h3>
 <p>Because the types of sequences are similar in many ways and the Methods that manipulate them are similar, 
@@ -20,7 +21,7 @@ I decided to use the Delegate Pattern to design the Methods. I passed both Inter
 this design pattern. </p>
 
 <h3>Interfaces</h3>
-<p>Interface aren't just for breakfast anymore. e can use them not only to define structure and implementation contracts, but also pass them as paramerters into methods and return them as values from methods. Well, not really, we can pass any POCO that implements that Interface, by specifying the Interface in the param or return type.</p>
+<p>Interfaces aren't just for breakfast anymore. e can use them not only to define structure and implementation contracts, but also pass them as paramerters into methods and return them as values from methods. Well, not really, we can pass any POCO that implements that Interface, by specifying the Interface in the param or return type.</p>
 <p>I can hear some saying, 'Big Deal'. But it is because it really provides a mechanism for reducing DRY (Don't Repeat Yourself) by aloowing a single method to use multiple types, but without causing validation headaches.</p>
 <p>I used Interface Definitions and passed the Interfaces into Methods as params and 
 returned tham as values from Methods. This solved a number of DRY problems I was having in the last version.</p>
