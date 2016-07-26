@@ -27,7 +27,7 @@ returned tham as values from Methods. This solved a number of DRY (Don't Repeat 
 
 
 <h2>Special Thanks to Bob Tabor and DevU.com</h2>
-<p>Shout0Out to Bob Tabor of DevU.com, especially his series on Application Architecture. 
+<p>Shout-Out to Bob Tabor of DevU.com, especially his series on Application Architecture. 
 Bob is a First-Class Educator and his series on Application architecture really opned my eyes to the amazing possibilities 
 in C#. Most notably, the seperation of concerns, delegates, passing Interfaces, and many more. If you are in search 
 of Programming Awesomeness, go to DevU.com. -- OK, end of shameless plug!</p>
