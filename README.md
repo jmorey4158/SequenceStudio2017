@@ -52,7 +52,7 @@ resource-intensive operations as you can shake the proverbial stick at. Awesome.
 <h4>Expression Body Syntax</h4>
 
 
-<h3Good Ol' C# Features</h3>
+<h3>Good Ol' C# Features</h3>
 <p>Of course, there are a ton of features that have been part of C# for years, but are still a staple of good developement. The Oldies But Goodies.Here are some of them I used throughout the project:</p>
 <h4>LINQ and Lambda Expressions</h4>
 <h4>Regex and Regular Expressions</h4>
