@@ -8,8 +8,6 @@ The code retrieves, stores and manipulates DNA, RNA, and Poypeptide (Protein) se
 (working on Azure-izing this), manipulate the sequences, and store the queries and query results locally.</p>
 <p> I've been rumaging around in this stack for a few years, as time permitted.</p>
 
-<h2>What Is The Data Flow?</h2>
-
 <h2> What C# Techniques Did You Use?</h2>
 <h3>Entity Framwork</h3>
 <p>The local storage is handled using the Entity Framework. I made this coie (over ADO.NET and T-SQL) because I was doing a
@@ -30,6 +28,16 @@ returned tham as values from Methods. This solved a number of DRY (Don't Repeat 
 as part of the re-architecture, I refactored a lot of my cross-boundary methods as asyncronous. But I did so strategically.
 
 <p>I created what I call the "Async Wall" pattern where I use a public method that takes in only POCOs form the Presentation Layer (wht's this? See Devu.com Application architecture). This method then calls private / protected mehods that take in native types and custom types and hand back POCOs. This way I can assure that the inputs from the Presentation Layer or Application Service Layer are valid and that I am handing back valid objects.</p>
+
+<p> This pattern fulfills both Seperation of Concerns and Encapsulation and allows for furure expansion / tweaking of the Business Layer without requiring changes to other layers.</p>
+
+<h3>Multi-Threading and TPL</h3>
+<p>In this incarnation of SS, again, as part of the re-architecture, I implemented both thread-sae types and methods but also 
+performance improvements using the Task Parallel Library (TPL) and the .AsParallel static method where needed. This greatly 
+improved performance on my multi-core test box but also in the cloud, where Azure can throw as many cores at some of the more
+resource-intensive operations as you can shake the preverbial stick at. Awesome.<p>
+
+<p>Of course, I reserved the TPL work for the layers that reside on scalable environments, like the Application Servie Layer, Business Layer, and Persistence Layer. I used the "Async Wall" Pattern to make the Presentation Layer as skinny as practical.</p>
 
 
 <h2>Special Thanks to Bob Tabor and DevU.com</h2>
