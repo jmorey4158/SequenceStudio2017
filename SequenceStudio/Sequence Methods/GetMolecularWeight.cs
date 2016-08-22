@@ -16,10 +16,10 @@ namespace SequenceStudio
             {
                 case SequenceEnums.SequenceType.DNA:
                 case SequenceEnums.SequenceType.RNA:
-                    return CalcMolWeightNucleotide(s);
+                    return CalcMolWeightNucleotide(s.Strand);
 
                 case SequenceEnums.SequenceType.Polypeptide:
-                    return CalcMolWeightPoly(s);
+                    return CalcMolWeightPoly(s.Strand);
 
                 case SequenceEnums.SequenceType.ConsensusDNA:
                     return -1;

@@ -12,3 +12,17 @@ C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\UnitTestSequ
 C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\UnitTestSequenceStudio\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\UnitTestSequenceStudio\bin\Debug\EntityFramework.xml
 C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\UnitTestSequenceStudio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\bin\Debug\UnitTestSequenceStudio.dll.config
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\bin\Debug\UnitTestSequenceStudio.dll
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\bin\Debug\UnitTestSequenceStudio.pdb
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\bin\Debug\EntityFramework.dll
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\bin\Debug\SequenceStudio.dll
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\bin\Debug\SequenceStudio.pdb
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\bin\Debug\EntityFramework.xml
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\obj\Debug\UnitTestSequenceStudio.csprojResolveAssemblyReference.cache
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\obj\Debug\UnitTestSequenceStudio.dll
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\obj\Debug\UnitTestSequenceStudio.pdb

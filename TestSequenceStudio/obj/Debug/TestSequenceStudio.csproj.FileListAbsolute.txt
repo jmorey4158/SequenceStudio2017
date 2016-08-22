@@ -10,3 +10,15 @@ C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\TestSequence
 C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\TestSequenceStudio\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\TestSequenceStudio\bin\Debug\EntityFramework.xml
 C:\Users\JAMES\documents\visual studio 2015\Projects\SequenceStudio\TestSequenceStudio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\TestSequenceStudio\bin\Debug\TestSequenceStudio.exe.config
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\TestSequenceStudio\bin\Debug\TestSequenceStudio.exe
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\TestSequenceStudio\bin\Debug\TestSequenceStudio.pdb
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\TestSequenceStudio\bin\Debug\EntityFramework.dll
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\TestSequenceStudio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\TestSequenceStudio\bin\Debug\SequenceStudio.dll
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\TestSequenceStudio\bin\Debug\SequenceStudio.pdb
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\TestSequenceStudio\bin\Debug\EntityFramework.xml
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\TestSequenceStudio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\TestSequenceStudio\obj\Debug\TestSequenceStudio.csprojResolveAssemblyReference.cache
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\TestSequenceStudio\obj\Debug\TestSequenceStudio.exe
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\TestSequenceStudio\obj\Debug\TestSequenceStudio.pdb
