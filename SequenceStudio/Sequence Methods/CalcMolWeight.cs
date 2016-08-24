@@ -9,8 +9,16 @@ namespace SequenceStudio
 
     public static partial class SequenceMethods
     {
-        public static decimal CalcMolWeight(ISequence s, SequenceEnums.SequenceType st)
+        /// <summary>
+        /// Helper Method CalcMolWeight - Calculate the Molecular Weight (in Daltons) of the specified ISequence-compliant sequence 
+        ///     (e.g. DNA, RNA, and Polypeptide).
+        /// </summary>
+        /// <param name="s">Any ISequence-compliant Sequence class instance</param>
+        /// <returns>Decimal - the molecular weight of the input sequence in Daltons.</returns>
+        /// <remarks>This public-facing method calls the private methods CalcMolWeightNucleotide() or CalcMolWeightPoly() for implementation.</remarks>
+        public static decimal CalcMolWeight(ISequence s)
         {
+            var st = s.SequenceType;
             var seq = s.Strand;
             switch (st)
             {
@@ -32,10 +40,17 @@ namespace SequenceStudio
         public static decimal CalcMolWeightCodon(OrfDictionary oDict)
         {
 
-            return 0;
+            return 0; //Not yet implemented
         }
 
 
+        /// <summary>
+        /// PRivate Helper Method CalcMolWeightNucleotide - Called by CalcMolWeight(). Parses the input sequence string and 
+        ///     calculates the molecular weight of the sequence, in Daltons.
+        /// </summary>
+        /// <param name="s">String - the input sequence strand.</param>
+        /// <returns>Decimal - the molecular weight of the sequence, in Daltons</returns>
+        /// <remarks>This method is part of the internal implementation and should be called directly. This method does not throw Exceptions.</remarks>
         private static decimal CalcMolWeightNucleotide(string s)
         {
 
@@ -72,6 +87,13 @@ namespace SequenceStudio
         }
 
 
+        /// <summary>
+        /// PRivate Helper Method CalcMolWeightPoly - Called by CalcMolWeight(). Parses the input sequence string and 
+        ///     calculates the molecular weight of the sequence, in Daltons.
+        /// </summary>
+        /// <param name="s">String - the input sequence strand.</param>
+        /// <returns>Decimal - the molecular weight of the sequence, in Daltons</returns>
+        /// <remarks>This method is part of the internal implementation and should be called directly. This method does not throw Exceptions.</remarks>
         private static decimal CalcMolWeightPoly(string s)
         {
             var dp = new decimal();
@@ -88,12 +110,12 @@ namespace SequenceStudio
             return dp;
         }
 
-
+        // Not yet implemented
         private static decimal[] CalcCodonMolWeight(string s)
         {
             var len = (s.Length / 3);
             var dArray = new decimal[len];
-
+            // TODO: Complete implementation
 
             return dArray;
         }
