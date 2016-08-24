@@ -14,6 +14,7 @@ namespace UnitTestSequenceStudio
         public const string DNAcompStrand = "TGATCGAGCATCAGCTACGTACGAGCATCGTACGACT";
         public const string DNAreverseStrand = "AGTCGTACGATGCTCGTACGTAGCTGATGCTCGATCA";
         public const string DNAreverseComplimentStrand = "TCAGCATGCTACGAGCATGCATCGACTACGAGCTAGT";
+        public const string DNAtranscript = "ACUAGCUCGUAGUCGAUGCAUGCUCGUAGCAUGCUGA";
         public const string DNAhash = "601480e0442a49f20cfe9aa59d129719"; // This is the SHA1 hash of the DNA.Strand
         public const SequenceEnums.SequenceType stDNA = SequenceEnums.SequenceType.DNA;
         public const decimal mwDNA = 10557.58m;

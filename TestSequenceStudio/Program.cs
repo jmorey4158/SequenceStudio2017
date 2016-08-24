@@ -21,7 +21,16 @@ namespace TestSequenceStudio
             RNA myRNA = new RNA(TestValiables.RNApass);
             Polypeptide MyPoly = new Polypeptide(TestValiables.Polypass);
 
-            Console.WriteLine( $"DNA Reverse Strand: {SequenceMethods.GetReverseComplimentStrand(myDna)}");
+            //Dictionary<int,string> res = SequenceMethods.GetResidueStatistics(myDna);
+
+            //foreach (KeyValuePair<int,string> kp in res)
+            //{
+            //    Console.WriteLine($"Total: {kp.Key}\tResidue: {kp.Value}");
+            //}
+
+            Console.WriteLine(SequenceMethods.GetTranscript(TestValiables.tvDNA));
+
+
 
 
             Console.ReadKey();
