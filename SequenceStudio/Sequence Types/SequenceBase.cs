@@ -137,7 +137,7 @@ namespace SequenceStudio
         {
             var sb = new StringBuilder();
 
-            sb.Append(string.Format($"Sequence ID: {StrandHash}\nStrand Length: {Strand.Length}\nSequence Type: {SequenceType}\nSequence Origin: {SequenceOriginType}"));
+            sb.Append($"Sequence ID: {StrandHash}\nStrand Length: {Strand.Length}\nSequence Type: {SequenceType}\nSequence Origin: {SequenceOriginType}");
 
             return sb.ToString();
 

@@ -9,6 +9,7 @@ namespace SequenceStudio
 {
     public static partial class SequenceMethods
     {
+        // Not implemented yet
         public static bool CompareIMatchToDb(string hash)
         {
             // TODO: Add implementation to search DB for the same Match.ID.
@@ -17,6 +18,7 @@ namespace SequenceStudio
             return false;
         }
 
+        // Not implemented yet
         //public static IMatch CompareIMatchToDb(string hash)
         //{
         //    // TODO: Add implementation to search DB for the same Match.ID.

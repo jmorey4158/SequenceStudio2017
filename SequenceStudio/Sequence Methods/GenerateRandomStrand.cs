@@ -9,6 +9,12 @@ namespace SequenceStudio
 
     public static partial class SequenceMethods
     {
+        /// <summary>
+        /// Help Method GenerateRandomStrand - This method creates a valid ISequence-compliant random Strand (string).
+        /// </summary>
+        /// <param name="length">Int - The length of the random Strand.</param>
+        /// <param name="type" cref="SequenceTypes">SequenceType - The type of sequence to create (e.g. DNA, RNA, Polypeptide, or ConsensusSequence.</param>
+        /// <returns>String - the ISequence-compliant sequence Strand.</returns>
         public static string GenerateRandomStrand(int length, SequenceEnums.SequenceType type)
         {
             if (length < 0)
@@ -34,7 +40,7 @@ namespace SequenceStudio
                     break;
 
                 case (SequenceEnums.SequenceType.ConsensusDNA):
-                    pattern = "ACTGN*";
+                    pattern = "ACTGN*_";
                     break;
 
                 default:

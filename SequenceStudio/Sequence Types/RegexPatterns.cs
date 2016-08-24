@@ -8,7 +8,7 @@ namespace SequenceStudio
 {
 
     /// <summary>
-    /// These Strings are used in Parse() and Validate() methods. The function as Regex tempaltes
+    /// These Strings are used in Parse() and Validate() methods. The function as Regex templates
     /// for the specific Sequence types and allow the code to determine the validity of the sequence.
     /// They are also used as constants in various methods, such as Translate().
     /// </summary>
@@ -17,8 +17,8 @@ namespace SequenceStudio
         public static string pos_regexDNA = "[ACTG]";
         public static string neg_regexDNA = "[^ACTG]";
 
-        public static string pos_regexConsensusDNA = "[ACTGN*]";
-        public static string neg_regexConsensusDNA = "[^ACTGN*]";
+        public static string pos_regexConsensusDNA = "[ACTGN_]";
+        public static string neg_regexConsensusDNA = "[^ACTGN_]";
 
 
         public static string pos_regexRNA = "[ACUG]";

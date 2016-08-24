@@ -8,12 +8,10 @@ namespace SequenceStudio
 {
     public static partial class SequenceMethods
     {
+        // TODO: Test this puppy
         public static IMatch FindContiguousMatches(ISequence template, ISequence pattern,
             SequenceEnums.SequenceOriginType to, SequenceEnums.SequenceOriginType po, int threshold)
         {
-
-
-
             string tem = template.Strand;
             string pat = pattern.Strand;
             Dictionary<int, int> matches = new Dictionary<int, int>();
@@ -45,9 +43,8 @@ namespace SequenceStudio
                 }
             }
 
-
-
-            return new Match(SequenceEnums.MatchType.ContiguousMatch, template.SequenceType, to, po, template.StrandHash, pattern.StrandHash, threshold, matches);
+            return new Match(SequenceEnums.MatchType.ContiguousMatch, 
+                template.SequenceType, to, po, template.StrandHash, pattern.StrandHash, threshold, matches);
         }
     }
 }
