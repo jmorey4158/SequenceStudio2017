@@ -9,6 +9,13 @@ namespace SequenceStudio
 {
     public static partial class SequenceMethods
     {
+        /// <summary>
+        /// Helper Method GetISequenceHash - This method returns the MD5 hash of the ISequence.Strand (sequence string).
+        /// This has is used as the identifier of the ISequence object for storing and comparing in the DB.
+        /// </summary>
+        /// <param name="s">String - the string representing a valid ISequence-compliant class instance Strand property.</param>
+        /// <returns></returns>
+        /// <remarks>This Method is not intended for public use and should only be called from ISequence-compliant constructors.</remarks>
         public static string GetISequenceHash(string s)
         {
             // Create a new instance of the MD5CryptoServiceProvider object.

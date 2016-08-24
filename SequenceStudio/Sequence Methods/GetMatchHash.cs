@@ -9,6 +9,7 @@ namespace SequenceStudio
 {
     public static partial class SequenceMethods
     {
+        // TODO: Complete implementation and Unit Tests
         public static string GetMatchHash(SequenceEnums.MatchType mt, SequenceEnums.SequenceType st, string tId, string pId, int t)
         {
             //Concat all param values into a single string to hash. 

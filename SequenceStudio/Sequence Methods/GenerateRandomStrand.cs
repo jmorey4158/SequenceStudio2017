@@ -17,9 +17,11 @@ namespace SequenceStudio
         /// <returns>String - the ISequence-compliant sequence Strand.</returns>
         public static string GenerateRandomStrand(int length, SequenceEnums.SequenceType type)
         {
+            // If they input -1234 get Abs value of 1234
             if (length < 0)
                 length = Math.Abs(length);
 
+            // If they input 0 throw a SequenceException telling them so
             if (length == 0)
                 throw new SequenceException("Strand length must be greater than 0 residues long.");
 
@@ -28,11 +30,11 @@ namespace SequenceStudio
             switch(type)
             {
                 case (SequenceEnums.SequenceType.DNA):
-                    pattern = RegexePatterns.pos_regexDNA.Substring(1, (RegexePatterns.pos_regexDNA.Length - 2));
+                    pattern = "ACTG";
                     break;
 
                 case (SequenceEnums.SequenceType.RNA):
-                    pattern = RegexePatterns.pos_regexRNA.Substring(1, (RegexePatterns.pos_regexRNA.Length - 2));
+                    pattern = "ACUG";
                     break;
 
                 case (SequenceEnums.SequenceType.Polypeptide):
@@ -44,7 +46,7 @@ namespace SequenceStudio
                     break;
 
                 default:
-                    throw new SequenceException("The specified SequenceType does not match any known SequenceType.");
+                    break;
             }
 
             var sb = new StringBuilder();
@@ -52,6 +54,7 @@ namespace SequenceStudio
             Random rnd = new Random();
             int r;
 
+            // This is the loop that actually creates the Strand.
             for (int i = 1; i <= length; i++)
             {
                 r = rnd.Next(0, pattern.Length);
