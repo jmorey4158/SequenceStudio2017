@@ -12,21 +12,14 @@ namespace TestSequenceStudio
 {
     class Program
     {
+
+        private const string pass = "ACDEFGHIKLMNPQRSTVWY"; // Well-formed RNA sequence - should pass
         static void Main(string[] args)
         {
-            var p = new EventPublisher();
+            var pass = SequenceMethods.CreateSequence(Program.pass,
+                SequenceEnums.SequenceType.Polypeptide, SequenceEnums.SequenceOriginType.Manual);
 
-            p.NcbiFetchStarted += (sender, e) => Console.WriteLine(
-                string.Format("Sender: {0} sent message details:\nMessage: {1}\nSource: {2}\nMethod: {3}\n"
-                , sender, e.Message, e.Source, e.MethodName));
-
-            var qGood = new EFetchQuery(NcbiEnums.Databases.Nucleotide,
-                new List<int>() { 1107, 181, 11098 },
-                NcbiEnums.EFetchRetTypeMode.TinySeqFastA);
-            var qlist = new List<EFetchQuery>() { qGood };
-            var r = NcbiMethods.GetEFetchResults(qGood).Result;
-
-
+            Console.WriteLine($"Strand: {pass.Strand}\nStrandLength: {pass.Strand.Length} \nHash: {pass.StrandHash}\nSequenceType: {pass.SequenceType} \nSequenceOrigin: {pass.SequenceOriginType}");
 
             Console.ReadKey();
         }
@@ -35,6 +28,22 @@ namespace TestSequenceStudio
 
     public class PastCode
     {
+
+            //var p = new EventPublisher();
+
+            //p.NcbiFetchStarted += (sender, e) => Console.WriteLine(
+            //    string.Format("Sender: {0} sent message details:\nMessage: {1}\nSource: {2}\nMethod: {3}\n"
+            //    , sender, e.Message, e.Source, e.MethodName));
+
+            //var qGood = new EFetchQuery(NcbiEnums.Databases.Nucleotide,
+            //    new List<int>() { 1107, 181, 11098 },
+            //    NcbiEnums.EFetchRetTypeMode.TinySeqFastA);
+            //var qlist = new List<EFetchQuery>() { qGood };
+            //var r = NcbiMethods.GetEFetchResults(qGood).Result;
+
+
+
+
         //var result =  EndToEndNcbi.GetNcbiEndToEnd(
         //    NcbiEnums.Databases.Nucleotide, "human[organism] insulin");
 

@@ -66,6 +66,8 @@
     <Compile Include="TestSequenceTypes\TestDnaType.cs" />
     <Compile Include="TestSequenceMethods\GetMatchHashTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestSequenceTypes\TestPolypeptide.cs" />
+    <Compile Include="TestSequenceTypes\TestRnaType.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SequenceStudio\SequenceStudio.csproj">

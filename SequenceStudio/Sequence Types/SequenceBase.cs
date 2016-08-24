@@ -49,14 +49,14 @@ namespace SequenceStudio
 
         [DataMember]
         /// <summary>
-        /// The Enumeration is derived from the NCBI enumeration property. It is used so that identitification
+        /// The Enumeration is derived from the NCBI enumeration property. It is used so that identification
         /// of sequences with the NCBI databases can be made.
         /// </summary>
         public string Strand { get; set; }
 
         [DataMember]
         /// <summary>
-        /// The Enumeration is derived from the NCBI enumeration property. It is used so that identitification
+        /// The Enumeration is derived from the NCBI enumeration property. It is used so that identification
         /// of sequences with the NCBI databases can be made.
         /// </summary>
         [Key]
@@ -80,12 +80,12 @@ namespace SequenceStudio
         #region Methods
 
         /// <summary>
-        /// Validateds that the input sequence is a valid Type of sequence.
+        /// Validates that the input sequence is a valid Type of sequence.
         /// </summary>
         /// <param name="s">String - The input sequence string to validate.</param>
         /// <param name="p">String - the SequenceType to validate the input string against.</param>
         /// <returns>Boolean - true if the validation passed; false if not.</returns>
-        /// <remarks>this meothed is overridden in child classes that use type-specific patterns.</remarks>
+        /// <remarks>this method is overridden in child classes that use type-specific patterns.</remarks>
         /// <exception cref="SequenceException">A SequenceException is throw if the input string does not comply with the SequenceType.</exception>
         public bool ValidateSequence(string s, SequenceEnums.SequenceType st)
         {
@@ -127,7 +127,7 @@ namespace SequenceStudio
                     return RegexePatterns.neg_regexConsensusDNA;
 
                 default:
-                    throw new SequenceException("The specified Sequence Type does not match ay patterns.");
+                    throw new SequenceException("The specified Sequence Type does not match any known patterns.");
             }
 
         }
@@ -137,8 +137,7 @@ namespace SequenceStudio
         {
             var sb = new StringBuilder();
 
-            sb.Append(string.Format("Sequence ID: {0}\nStrand Length: {1}\nSequence Type: {2}\nSequence Origin: {3}",
-                StrandHash, Strand.Length, SequenceType, SequenceOriginType));
+            sb.Append(string.Format($"Sequence ID: {StrandHash}\nStrand Length: {Strand.Length}\nSequence Type: {SequenceType}\nSequence Origin: {SequenceOriginType}"));
 
             return sb.ToString();
 
