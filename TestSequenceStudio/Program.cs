@@ -21,9 +21,8 @@ namespace TestSequenceStudio
             RNA myRNA = new RNA(TestValiables.RNApass);
             Polypeptide MyPoly = new Polypeptide(TestValiables.Polypass);
 
-            Console.WriteLine( $"DNA MoleWeight: {SequenceMethods.GetMolecularWeight(myDna)}");
-            Console.WriteLine( $"RNA MoleWeight: {SequenceMethods.GetMolecularWeight(myRNA)}");
-            Console.WriteLine( $"Poly MoleWeight: {SequenceMethods.GetMolecularWeight(MyPoly)}");
+            Console.WriteLine( $"DNA Reverse Strand: {SequenceMethods.GetReverseComplimentStrand(myDna)}");
+
 
             Console.ReadKey();
         }

@@ -1,0 +1,24 @@
+﻿    Strand: ACTAGCTCGTAGTCGATGCATGCTCGTAGCATGCTGA
+    StrandLength: 37
+    Hash: 601480e0442a49f20cfe9aa59d129719
+    SequenceType: DNA
+    SequenceOrigin: Manual
+
+
+    Strand: ACUAGCUCGUAGUCGAUGCAUGCUCGUAGCAUGCUGA
+    StrandLength: 37
+    Hash: 0fb2c54e7d617ffb5b53ccb481c5181f
+    SequenceType: RNA
+    SequenceOrigin: Manual
+
+
+    Strand: ACDEFGHIKLMNPQRSTVWY
+    StrandLength: 20
+    Hash: 638ef73a7502450731f6bfb2c2dd8747
+    SequenceType: Polypeptide
+    SequenceOrigin: Manual
+
+
+    DNA MoleWeight: 10557.58
+    RNA MoleWeight: 8792.18
+    Poly MoleWeight: 2573.82126

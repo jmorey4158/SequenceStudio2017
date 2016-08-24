@@ -65,6 +65,8 @@
   <ItemGroup>
     <Compile Include="TestSequenceMethods\Test_CalcMolWeight.cs" />
     <Compile Include="TestSequenceMethods\Test_GetComplimentStrand.cs" />
+    <Compile Include="TestSequenceMethods\Test_GetReverseComplimentStrand.cs" />
+    <Compile Include="TestSequenceMethods\Test_GetReverseStrand.cs" />
     <Compile Include="TestSequenceTypes\TestDnaType.cs" />
     <Compile Include="TestSequenceMethods\Test_GetISequenceHash.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -88,6 +90,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Test Values.txt" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
