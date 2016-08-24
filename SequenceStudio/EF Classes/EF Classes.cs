@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace SequenceStudio
 {
+
     public partial class SequenceDBContext : DbContext
     {
         //public DbSet<DNA> ManualDNAs { get; set; }

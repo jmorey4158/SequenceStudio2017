@@ -63,8 +63,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Classes\DnaTest.cs" />
-    <Compile Include="GetMatchHashTest.cs" />
+    <Compile Include="TestSequenceTypes\TestDnaType.cs" />
+    <Compile Include="TestSequenceMethods\GetMatchHashTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -74,7 +74,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="SequenceMethods\" />
+    <Folder Include="TestcbiTypes\" />
+    <Folder Include="TestEfClasses\" />
+    <Folder Include="TestExceptions\" />
+    <Folder Include="TestNcbiMethods\" />
+    <Folder Include="TestSequenceEvents\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

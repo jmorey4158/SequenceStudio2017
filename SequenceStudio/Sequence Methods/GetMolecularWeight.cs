@@ -21,8 +21,9 @@ namespace SequenceStudio
                 case SequenceEnums.SequenceType.Polypeptide:
                     return CalcMolWeightPoly(s.Strand);
 
-                case SequenceEnums.SequenceType.ConsensusDNA:
-                    return -1;
+                //case SequenceEnums.SequenceType.ConsensusDNA:
+                //    return -1;
+
                 default:
                     return -1;
             }
