@@ -63,11 +63,14 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="TestSequenceMethods\Test_CalcMolWeight.cs" />
+    <Compile Include="TestSequenceMethods\Test_GetComplimentStrand.cs" />
     <Compile Include="TestSequenceTypes\TestDnaType.cs" />
-    <Compile Include="TestSequenceMethods\GetMatchHashTest.cs" />
+    <Compile Include="TestSequenceMethods\Test_GetISequenceHash.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestSequenceTypes\TestPolypeptide.cs" />
     <Compile Include="TestSequenceTypes\TestRnaType.cs" />
+    <Compile Include="TestValues.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SequenceStudio\SequenceStudio.csproj">

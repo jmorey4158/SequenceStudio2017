@@ -17,7 +17,7 @@ namespace SequenceStudio
             // Convert the input string to a byte array and compute the hash.
             byte[] data = md5Hasher.ComputeHash(Encoding.Default.GetBytes(s));
 
-            // Create a new Stringbuilder to collect the bytes
+            // Create a new StringBuilder to collect the bytes
             // and create a string.
             StringBuilder sBuilder = new StringBuilder();
 

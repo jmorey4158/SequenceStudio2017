@@ -31,19 +31,4 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 4
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://revealeddesigns.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = SequenceStudio\\SequenceStudio.csproj
-		SccProjectName1 = SequenceStudio
-		SccLocalPath1 = SequenceStudio
-		SccProjectUniqueName2 = TestSequenceStudio\\TestSequenceStudio.csproj
-		SccProjectName2 = TestSequenceStudio
-		SccLocalPath2 = TestSequenceStudio
-		SccProjectUniqueName3 = UnitTestSequenceStudio\\UnitTestSequenceStudio.csproj
-		SccProjectName3 = UnitTestSequenceStudio
-		SccLocalPath3 = UnitTestSequenceStudio
-	EndGlobalSection
 EndGlobal

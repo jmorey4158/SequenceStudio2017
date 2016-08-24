@@ -7,22 +7,29 @@ using System.Text.RegularExpressions;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using SequenceStudio;
+using UnitTestSequenceStudio;
 
 namespace TestSequenceStudio
 {
-    class Program
+    public class Program
     {
 
-        private const string pass = "ACDEFGHIKLMNPQRSTVWY"; // Well-formed RNA sequence - should pass
         static void Main(string[] args)
         {
-            var pass = SequenceMethods.CreateSequence(Program.pass,
-                SequenceEnums.SequenceType.Polypeptide, SequenceEnums.SequenceOriginType.Manual);
 
-            Console.WriteLine($"Strand: {pass.Strand}\nStrandLength: {pass.Strand.Length} \nHash: {pass.StrandHash}\nSequenceType: {pass.SequenceType} \nSequenceOrigin: {pass.SequenceOriginType}");
+            DNA myDna = new DNA(TestValiables.DNApass);
+            RNA myRNA = new RNA(TestValiables.RNApass);
+            Polypeptide MyPoly = new Polypeptide(TestValiables.Polypass);
+
+            Console.WriteLine( $"DNA MoleWeight: {SequenceMethods.GetMolecularWeight(myDna)}");
+            Console.WriteLine( $"RNA MoleWeight: {SequenceMethods.GetMolecularWeight(myRNA)}");
+            Console.WriteLine( $"Poly MoleWeight: {SequenceMethods.GetMolecularWeight(MyPoly)}");
 
             Console.ReadKey();
         }
+
+
+
 
     }
 

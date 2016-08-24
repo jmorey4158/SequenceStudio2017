@@ -7,25 +7,20 @@ namespace UnitTestSequenceStudio
     public partial class SequenceStudioUnitTests
     {
 
-        private string RNApass = "ACUAGCUCGUAGUCGAUGCAUGCUCGUAGCAUGCUGA"; // Well-formed DNA sequence - should pass
-        private string RNAfail = "ACUGCAUGCUAGCUGACUGCUGCHaUgcUcUgcaUgcUagc"; //  Has an 'h' in there somewhere
-        private string RNAhash = "0fb2c54e7d617ffb5b53ccb481c5181f"; // This is the SHA1 hash of the DNA.Strand
-        private SequenceEnums.SequenceType stRNA = SequenceEnums.SequenceType.RNA;
-
         [TestMethod]
         public void TestRnaType_Good_ShouldPass()
         {
             try
             {
-                var testRNA = SequenceMethods.CreateSequence(RNApass,
+                var testRNA = SequenceMethods.CreateSequence(TestValiables.RNApass,
                     SequenceEnums.SequenceType.RNA, SequenceEnums.SequenceOriginType.Manual);
 
                 Assert.IsInstanceOfType(testRNA, typeof(RNA));
-                Assert.AreEqual<string>(RNApass, testRNA.Strand);
+                Assert.AreEqual<string>(TestValiables.RNApass, testRNA.Strand);
                 Assert.AreEqual<int>(37, testRNA.Strand.Length);
-                Assert.AreEqual<string>(RNAhash, testRNA.StrandHash);
-                Assert.AreEqual<SequenceEnums.SequenceType>(stRNA, testRNA.SequenceType);
-                Assert.AreEqual<SequenceEnums.SequenceOriginType>(sotManual,
+                Assert.AreEqual<string>(TestValiables.RNAhash, testRNA.StrandHash);
+                Assert.AreEqual<SequenceEnums.SequenceType>(TestValiables.stRNA, testRNA.SequenceType);
+                Assert.AreEqual<SequenceEnums.SequenceOriginType>(TestValiables.sotManual,
                     testRNA.SequenceOriginType);
             }
             catch (SequenceException se)
@@ -40,7 +35,7 @@ namespace UnitTestSequenceStudio
         {
             try
             {
-                var failRDNA = SequenceMethods.CreateSequence(RNAfail,
+                var failRDNA = SequenceMethods.CreateSequence(TestValiables.RNAfail,
                     SequenceEnums.SequenceType.RNA, SequenceEnums.SequenceOriginType.Manual);
             }
             catch (SequenceException se)

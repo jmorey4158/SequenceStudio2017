@@ -7,25 +7,20 @@ namespace UnitTestSequenceStudio
     public partial class SequenceStudioUnitTests
     {
 
-        private string Polypass = "ACDEFGHIKLMNPQRSTVWY"; // Well-formed DNA sequence - should pass
-        private string Polyfail = "ACDEFGHIKLMNXPQRSTVWY"; //  Has an 'X' in there somewhere
-        private string Polyhash = "638ef73a7502450731f6bfb2c2dd8747"; // This is the SHA1 hash of the Strand
-        private SequenceEnums.SequenceType stPoly = SequenceEnums.SequenceType.Polypeptide;
-
         [TestMethod]
         public void TestPolypeptideType_Good_ShouldPass()
         {
             try
             {
-                var testPoly = SequenceMethods.CreateSequence(Polypass,
+                var testPoly = SequenceMethods.CreateSequence(TestValiables.Polypass,
                     SequenceEnums.SequenceType.Polypeptide, SequenceEnums.SequenceOriginType.Manual);
 
                 Assert.IsInstanceOfType(testPoly, typeof(Polypeptide));
-                Assert.AreEqual<string>(Polypass, testPoly.Strand);
+                Assert.AreEqual<string>(TestValiables.Polypass, testPoly.Strand);
                 Assert.AreEqual<int>(20, testPoly.Strand.Length);
-                Assert.AreEqual<string>(Polyhash, testPoly.StrandHash);
-                Assert.AreEqual<SequenceEnums.SequenceType>(stPoly, testPoly.SequenceType);
-                Assert.AreEqual<SequenceEnums.SequenceOriginType>(sotManual,
+                Assert.AreEqual<string>(TestValiables.Polyhash, testPoly.StrandHash);
+                Assert.AreEqual<SequenceEnums.SequenceType>(TestValiables.stPoly, testPoly.SequenceType);
+                Assert.AreEqual<SequenceEnums.SequenceOriginType>(TestValiables.sotManual,
                     testPoly.SequenceOriginType);
             }
             catch (SequenceException se)
@@ -40,7 +35,7 @@ namespace UnitTestSequenceStudio
         {
             try
             {
-                var failPoly = SequenceMethods.CreateSequence(Polyfail,
+                var failPoly = SequenceMethods.CreateSequence(TestValiables.Polyfail,
                     SequenceEnums.SequenceType.Polypeptide, SequenceEnums.SequenceOriginType.Manual);
             }
             catch (SequenceException se)

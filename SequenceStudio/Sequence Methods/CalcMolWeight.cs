@@ -46,20 +46,20 @@ namespace SequenceStudio
                 switch (s.Substring(i, 1))
                 {
                     case "A":
-                        decimal.Add(dn, (decimal)297.21);
+                        dn += 297.21m;
                         break;
                     case "C":
-                        decimal.Add(dn, (decimal)273.19);
+                        dn += 273.19m;
                         break;
                     case "T":
-                        decimal.Add(dn, (decimal)288.63);
+                        dn += 288.63m;
                         break;
                     case "G":
-                        decimal.Add(dn, (decimal)313.21);
+                        dn += 313.21m;
                         break;
 
                     case "U":
-                        decimal.Add(dn, (decimal)112.09);
+                        dn += 112.09m;
                         break;
 
                     default:
@@ -82,7 +82,7 @@ namespace SequenceStudio
                 foreach (var a in aa)
                 {
                     if (s.Substring(i, 1) == a.Key)
-                        decimal.Add(dp, a.Value);
+                        dp += a.Value;
                 }
             }
             return dp;

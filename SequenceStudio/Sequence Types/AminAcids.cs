@@ -26,7 +26,7 @@ namespace SequenceStudio
 
             public string Initial { get; protected set; }
 
-            public double MolecularWeight { get; protected set; }
+            public decimal MolecularWeight { get; protected set; }
 
             public string[] Codons { get; protected set; }
 
@@ -58,7 +58,7 @@ namespace SequenceStudio
                 LongName = "Alanine";
                 ShortName = "Ala";
                 Initial = "A";
-                MolecularWeight = 89.09404;
+                MolecularWeight = 89.09404m;
                 Codons = new String[] { "GCU", "GCC", "GCA", "GCG" };
             }
         }
@@ -70,7 +70,7 @@ namespace SequenceStudio
                 LongName = "Asparagine";
                 ShortName = "Asn";
                 Initial = "N";
-                MolecularWeight = 132.11904;
+                MolecularWeight = 132.11904m;
                 Codons = new String[] { "GAU", "GAC" };
             }
         }
@@ -82,7 +82,7 @@ namespace SequenceStudio
                 LongName = "Cysteine";
                 ShortName = "Cys";
                 Initial = "C";
-                MolecularWeight = 121.15404;
+                MolecularWeight = 121.15404m;
                 Codons = new String[] { "UGU", "UGC" };
             }
         }
@@ -94,7 +94,7 @@ namespace SequenceStudio
                 LongName = "AsparticAcid";
                 ShortName = "Asp";
                 Initial = "D";
-                MolecularWeight = 133.10384;
+                MolecularWeight = 133.10384m;
                 Codons = new String[] { "GAU", "GAC" };
             }
         }
@@ -106,7 +106,7 @@ namespace SequenceStudio
                 LongName = "GlutamicAcid";
                 ShortName = "Glu";
                 Initial = "E";
-                MolecularWeight = 147.13074;
+                MolecularWeight = 147.13074m;
                 Codons = new String[] { "GAA", "GAG" };
             }
         }
@@ -118,7 +118,7 @@ namespace SequenceStudio
                 LongName = "Phenylalanine";
                 ShortName = "Phe";
                 Initial = "F";
-                MolecularWeight = 165.19184;
+                MolecularWeight = 165.19184m;
                 Codons = new String[] { "UUU", "UUC" };
             }
         }
@@ -130,7 +130,7 @@ namespace SequenceStudio
                 LongName = "Glycine";
                 ShortName = "Gly";
                 Initial = "G";
-                MolecularWeight = 75.06714;
+                MolecularWeight = 75.06714m;
                 Codons = new String[] { "GGU", "GGC", "GGA", "GGG" };
             }
         }
@@ -142,7 +142,7 @@ namespace SequenceStudio
                 LongName = "Histidine";
                 ShortName = "His";
                 Initial = "H";
-                MolecularWeight = 155.15634;
+                MolecularWeight = 155.15634m;
                 Codons = new String[] { "CAU", "CAC" };
             }
         }
@@ -154,7 +154,7 @@ namespace SequenceStudio
                 LongName = "Isoleucine";
                 ShortName = "Ile";
                 Initial = "I";
-                MolecularWeight = 131.17464;
+                MolecularWeight = 131.17464m;
                 Codons = new String[] { "AUU", "AUC", "AUA" };
             }
         }
@@ -166,7 +166,7 @@ namespace SequenceStudio
                 LongName = "Lysine";
                 ShortName = "Lys";
                 Initial = "K";
-                MolecularWeight = 146.18934;
+                MolecularWeight = 146.18934m;
                 Codons = new String[] { "AAA", "AAG" };
             }
         }
@@ -178,7 +178,7 @@ namespace SequenceStudio
                 LongName = "Leucine";
                 ShortName = "Leu";
                 Initial = "L";
-                MolecularWeight = 131.17464;
+                MolecularWeight = 131.17464m;
                 Codons = new String[] { "UUA", "UUG", "CUU", "CUC", "CUA", "CUG" };
             }
         }
@@ -190,7 +190,7 @@ namespace SequenceStudio
                 LongName = "Methionine";
                 ShortName = "Met";
                 Initial = "M";
-                MolecularWeight = 149.20784;
+                MolecularWeight = 149.20784m;
                 Codons = new String[] { "AUG" };
             }
         }
@@ -202,7 +202,7 @@ namespace SequenceStudio
                 LongName = "Proline";
                 ShortName = "Pro";
                 Initial = "P";
-                MolecularWeight = 132.11904;
+                MolecularWeight = 132.11904m;
                 Codons = new String[] { "CCU", "CCC", "CCA", "CCG" };
             }
         }
@@ -214,7 +214,7 @@ namespace SequenceStudio
                 LongName = "Glutamine";
                 ShortName = "Gln";
                 Initial = "Q";
-                MolecularWeight = 146.14594;
+                MolecularWeight = 146.14594m;
                 Codons = new String[] { "GAA", "GAG" };
             }
         }
@@ -226,7 +226,7 @@ namespace SequenceStudio
                 LongName = "Arginine";
                 ShortName = "Arg";
                 Initial = "R";
-                MolecularWeight = 174.20274;
+                MolecularWeight = 174.20274m;
                 Codons = new String[] { "CGU", "CGC", "CGA", "CGG", "AGA", "AGG" };
             }
         }
@@ -238,7 +238,7 @@ namespace SequenceStudio
                 LongName = "Serine";
                 ShortName = "Ser";
                 Initial = "S";
-                MolecularWeight = 105.09344;
+                MolecularWeight = 105.09344m;
                 Codons = new String[] { "UCU", "UCC", "UCA", "UCG", "AGU", "AGC" };
             }
         }
@@ -250,7 +250,7 @@ namespace SequenceStudio
                 LongName = "Threonine";
                 ShortName = "Thr";
                 Initial = "T";
-                MolecularWeight = 119.12034;
+                MolecularWeight = 119.12034m;
                 Codons = new String[] { "ACU", "ACC", "ACA", "ACG" };
             }
         }
@@ -262,7 +262,7 @@ namespace SequenceStudio
                 LongName = "Valine";
                 ShortName = "Val";
                 Initial = "V";
-                MolecularWeight = 117.14784;
+                MolecularWeight = 117.14784m;
                 Codons = new String[] { "GUU", "GUC", "GUA", "GUG" };
             }
         }
@@ -274,7 +274,7 @@ namespace SequenceStudio
                 LongName = "Tryptophan";
                 ShortName = "Trp";
                 Initial = "W";
-                MolecularWeight = 204.22844;
+                MolecularWeight = 204.22844m;
                 Codons = new String[] { "UGG" };
             }
         }
@@ -286,7 +286,7 @@ namespace SequenceStudio
                 LongName = "Tyrosine";
                 ShortName = "Tyr";
                 Initial = "Y";
-                MolecularWeight = 181.19124;
+                MolecularWeight = 181.19124m;
                 Codons = new String[] { "UAU", "UAC" };
             }
         }
@@ -298,7 +298,7 @@ namespace SequenceStudio
                 LongName = "Stop";
                 ShortName = "Stop";
                 Initial = "^";
-                MolecularWeight = 0;
+                MolecularWeight = 0m;
                 Codons = new String[] { "UAA", "UAG" };
             }
         }

@@ -8,7 +8,8 @@ namespace SequenceStudio
 {
     public  static partial class SequenceMethods
     {
-        public static ISequence CreateSequence(string strand, SequenceEnums.SequenceType st, SequenceEnums.SequenceOriginType so)
+        public static ISequence CreateSequence(string strand, 
+            SequenceEnums.SequenceType st, SequenceEnums.SequenceOriginType so)
         {
             switch (st)
             {
