@@ -1,0 +1,10 @@
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\SequenceStudioPowerShell\obj\Debug\SequenceStudioPowerShell.csprojResolveAssemblyReference.cache
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\SequenceStudioPowerShell\bin\Debug\SequenceStudioPowerShell.dll
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\SequenceStudioPowerShell\bin\Debug\SequenceStudioPowerShell.pdb
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\SequenceStudioPowerShell\bin\Debug\SequenceStudio.dll
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\SequenceStudioPowerShell\bin\Debug\System.Management.Automation.dll
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\SequenceStudioPowerShell\bin\Debug\EntityFramework.dll
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\SequenceStudioPowerShell\bin\Debug\SequenceStudio.pdb
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\SequenceStudioPowerShell\bin\Debug\EntityFramework.xml
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\SequenceStudioPowerShell\obj\Debug\SequenceStudioPowerShell.dll
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\SequenceStudioPowerShell\obj\Debug\SequenceStudioPowerShell.pdb
