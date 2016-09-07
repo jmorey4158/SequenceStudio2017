@@ -13,7 +13,6 @@ namespace SequenceStudioPowerShell
         [Parameter(Mandatory = true, ParameterSetName = "DNA",
             ValueFromPipeline = true,
             HelpMessage = "Provide a valid DNA class instance.")]
-        [Alias("d")]
         public DNA Dna
         {
             set { _Iseq = value; }
@@ -23,7 +22,6 @@ namespace SequenceStudioPowerShell
         [Parameter(Mandatory = true, ParameterSetName = "RNA",
             ValueFromPipeline = true,
             HelpMessage = "Provide a valid RNA class instance.")]
-        [Alias("r")]
         public RNA Rna
         {
             set { _Iseq = value; }
@@ -32,7 +30,6 @@ namespace SequenceStudioPowerShell
         [Parameter(Mandatory = true, ParameterSetName = "Poly",
             ValueFromPipeline = true,
             HelpMessage = "Provide a valid Polypeptide class instance.")]
-        [Alias("p")]
         public Polypeptide Poly
         {
             set { _Iseq = value; }
@@ -41,7 +38,6 @@ namespace SequenceStudioPowerShell
         [Parameter(Mandatory = true, ParameterSetName = "Strand",
             ValueFromPipeline = true,
             HelpMessage = "Provide a valid DNA, RNA, or Polypeptide sequence.")]
-        [Alias("s")]
         public string Strand
         {
             set { _strand = value; }
@@ -52,7 +48,6 @@ namespace SequenceStudioPowerShell
             ValueFromPipeline = true,
             HelpMessage = "Provide a valid Sequence Type ('DNA', 'RNA', or 'Poly'.")]
         [ValidateSet("DNA", "RNA", "Poly")]
-        [Alias("t")]
         public string Type
         {
             get { return _type; }
