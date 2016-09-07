@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSequenceStudio", "TestS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestSequenceStudio", "UnitTestSequenceStudio\UnitTestSequenceStudio.csproj", "{1AB9B008-CBD0-468A-93F3-D158A68112ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SequenceStudioPowerShell", "..\SequenceStudioPowerShell\SequenceStudioPowerShell.csproj", "{4921447D-4730-4151-B73D-0DE82B647896}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1AB9B008-CBD0-468A-93F3-D158A68112ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AB9B008-CBD0-468A-93F3-D158A68112ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AB9B008-CBD0-468A-93F3-D158A68112ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4921447D-4730-4151-B73D-0DE82B647896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4921447D-4730-4151-B73D-0DE82B647896}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4921447D-4730-4151-B73D-0DE82B647896}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4921447D-4730-4151-B73D-0DE82B647896}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
