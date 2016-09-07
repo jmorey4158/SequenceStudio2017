@@ -24,7 +24,6 @@ namespace SequenceStudio
         SequenceEnums.SequenceOriginType TemplateType { get; }
         SequenceEnums.SequenceOriginType PatternType { get; }
         SequenceEnums.MatchType MatchType { get; }
-        string MatchID { get; }
         string TemplateID { get; }
         string PatternID { get; }
         int Threshold { get; }

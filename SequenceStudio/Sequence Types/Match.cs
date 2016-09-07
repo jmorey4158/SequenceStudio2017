@@ -45,7 +45,7 @@ namespace SequenceStudio
         #region Data Members
 
         [DataMember]
-        public string ID { get; }
+        public string ID { get; private set; }
 
         [DataMember]
         public SequenceEnums.MatchType MatchType { get; }

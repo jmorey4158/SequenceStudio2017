@@ -73,6 +73,7 @@
     <Compile Include="NCBI Methods\ParseFastaFile.cs" />
     <Compile Include="NCBI Methods\ParseFastaXml.cs" />
     <Compile Include="Sequence Methods\PopulateOrfs.cs" />
+    <Compile Include="Sequence Methods\ValidateSequence.cs" />
     <Compile Include="Sequence Types\AminAcids.cs" />
     <Compile Include="Sequence Types\AminoAcidStruct.cs" />
     <Compile Include="Sequence Types\ConsensusDNA.cs" />
