@@ -3,9 +3,9 @@ using SequenceStudio;
 
 namespace SequenceStudioPowerShell
 {
-    [Cmdlet(VerbsCommon.Get, "MolecularWeight")]
-    [Alias("gwm")]
-    public class GetMolWeightCmdlet : PSCmdlet
+    [Cmdlet(VerbsCommon.Get, "SequenceHash")]
+    [Alias("ghash")]
+    public class GetSequenceHashCmdlet : PSCmdlet
     {
 
         private ISequence _Iseq;
@@ -66,7 +66,7 @@ namespace SequenceStudioPowerShell
                     case "DNA":
                         if (SequenceMethods.ValidateSequence(_strand, SequenceEnums.SequenceType.DNA))
                         {
-                            WriteObject(new DNA(_strand));
+                            WriteObject(SequenceMethods.GetISequenceHash(_strand));
                         }
                         else
                         {
@@ -77,7 +77,7 @@ namespace SequenceStudioPowerShell
                     case "RNA":
                         if (SequenceMethods.ValidateSequence(_strand, SequenceEnums.SequenceType.RNA))
                         {
-                            WriteObject(new RNA(_strand));
+                            WriteObject(SequenceMethods.GetISequenceHash(_strand));
                         }
                         else
                         {
@@ -88,7 +88,7 @@ namespace SequenceStudioPowerShell
                     case "Poly":
                         if (SequenceMethods.ValidateSequence(_strand, SequenceEnums.SequenceType.Polypeptide))
                         {
-                            WriteObject(new Polypeptide(_strand));
+                            WriteObject(SequenceMethods.GetISequenceHash(_strand));
                         }
                         else
                         {
@@ -104,7 +104,7 @@ namespace SequenceStudioPowerShell
             }
             else
             {
-                WriteObject(SequenceMethods.GetMolecularWeight(_Iseq));
+                WriteObject(SequenceMethods.GetISequenceHash(_Iseq.Strand));
             }
 
         }
