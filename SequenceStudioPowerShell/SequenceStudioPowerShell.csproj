@@ -53,12 +53,10 @@
     <Compile Include="Cmdlets\Get-MolWeight.cs" />
     <Compile Include="Cmdlets\Get-SequenceHash.cs" />
     <Compile Include="Cmdlets\New-DNA.cs" />
-    <Compile Include="Cmdlets\New-DnaMetadata.cs" />
+    <Compile Include="Cmdlets\New-SequenceMetadata.cs" />
     <Compile Include="Cmdlets\New-RandomStrand.cs" />
-    <Compile Include="Cmdlets\NewPolyMetadata.cs" />
-    <Compile Include="Cmdlets\NewPolypeptide.cs" />
-    <Compile Include="Cmdlets\NewRna.cs" />
-    <Compile Include="Cmdlets\NewRnaMetadata.cs" />
+    <Compile Include="Cmdlets\New-Polypeptide.cs" />
+    <Compile Include="Cmdlets\New-Rna.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValidateAttributes.cs" />
     <Compile Include="ValidateError.cs" />

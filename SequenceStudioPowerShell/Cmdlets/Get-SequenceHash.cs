@@ -3,8 +3,8 @@ using SequenceStudio;
 
 namespace SequenceStudioPowerShell
 {
-    [Cmdlet(VerbsCommon.Get, "SequenceHash")]
-    [Alias("ghash")]
+    [Cmdlet(VerbsCommon.Get, "SequenceHash",
+        DefaultParameterSetName = "Strand")]
     public class GetSequenceHashCmdlet : PSCmdlet
     {
 
@@ -40,7 +40,7 @@ namespace SequenceStudioPowerShell
             HelpMessage = "Provide a valid DNA, RNA, or Polypeptide sequence.")]
         public string Strand
         {
-            set { _strand = value; }
+            set { _strand = value.ToUpper(); }
         }
         private string _strand;
 

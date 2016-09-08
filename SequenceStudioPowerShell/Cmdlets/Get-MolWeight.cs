@@ -3,8 +3,8 @@ using SequenceStudio;
 
 namespace SequenceStudioPowerShell
 {
-    [Cmdlet(VerbsCommon.Get, "MolecularWeight")]
-    [Alias("gwm")]
+    [Cmdlet(VerbsCommon.Get, "MolecularWeight",
+        DefaultParameterSetName = "Strand")]
     public class GetMolWeightCmdlet : PSCmdlet
     {
 
@@ -66,7 +66,7 @@ namespace SequenceStudioPowerShell
                     case "DNA":
                         if (SequenceMethods.ValidateSequence(_strand, SequenceEnums.SequenceType.DNA))
                         {
-                            WriteObject(new DNA(_strand));
+                            WriteObject(SequenceMethods.GetMolecularWeight(new DNA(_strand)));
                         }
                         else
                         {
@@ -77,7 +77,7 @@ namespace SequenceStudioPowerShell
                     case "RNA":
                         if (SequenceMethods.ValidateSequence(_strand, SequenceEnums.SequenceType.RNA))
                         {
-                            WriteObject(new RNA(_strand));
+                            WriteObject(SequenceMethods.GetMolecularWeight(new RNA(_strand)));
                         }
                         else
                         {
@@ -88,7 +88,7 @@ namespace SequenceStudioPowerShell
                     case "Poly":
                         if (SequenceMethods.ValidateSequence(_strand, SequenceEnums.SequenceType.Polypeptide))
                         {
-                            WriteObject(new Polypeptide(_strand));
+                            WriteObject(SequenceMethods.GetMolecularWeight(new Polypeptide(_strand)));
                         }
                         else
                         {

@@ -31,7 +31,7 @@ namespace SequenceStudio
             var regex = new Regex(GetRegex(st));
 
             //If any character in the input string matches the negative pattern then return 'false' which throws a SequenceException.
-            if (regex.IsMatch(s))
+            if (regex.IsMatch(s.ToUpper()))
                 return false;
 
             //If the input string does NOT match the negative pattern then return 'true' and continue to instantiate the ISequence class.

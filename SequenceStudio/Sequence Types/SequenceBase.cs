@@ -27,7 +27,7 @@ namespace SequenceStudio
                     if(SequenceMethods.CompareISequenceToDb(SequenceMethods.GetISequenceHash(seq)))
                         throw new SequenceException(string.Format("You requested that the specified 'sequence' be unique, however, the specified 'sequence' already exists."));
 
-                Strand = seq;
+                Strand = seq.ToUpper();
 
                 StrandHash = SequenceMethods.GetISequenceHash(seq);
 

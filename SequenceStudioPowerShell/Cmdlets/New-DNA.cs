@@ -3,10 +3,10 @@ using SequenceStudio;
 
 namespace SequenceStudioPowerShell
 {
-    [Cmdlet(VerbsCommon.New, "DNA", DefaultParameterSetName = "String" )]
+    [Cmdlet(VerbsCommon.New, "DNA", DefaultParameterSetName = "Strand" )]
     public class NewDnaCmdlet : PSCmdlet
     {
-        [Parameter(Mandatory =true,ParameterSetName ="String", 
+        [Parameter(Mandatory =true,ParameterSetName ="Stand", 
             ValueFromPipeline = true,
             HelpMessage = "Enter a valid DNA sequence, e.g. ACATCGATCATCGTGACATG.")]
         [Alias("s")]
@@ -25,12 +25,12 @@ namespace SequenceStudioPowerShell
         [Alias("d")]
         public DNA DNA 
         {
-            set { _dna.Strand = value.Strand; }
+            set { _dna = value; }
         }
         private DNA _dna;
 
 
-        [Parameter(Mandatory =true,ParameterSetName ="DNA", 
+        [Parameter(Mandatory = false,ParameterSetName ="DNA", 
             ValueFromPipeline = false,
             HelpMessage = "Choose -Reverse (-r) to create a new DNA object based upon the Reverse strand of this DNA object. Use this together with the -Compliment switch (-c) to create a new DNA object based upon the ReverseCompliment strand of this DNA object.")]
         [Alias("r")]
@@ -42,7 +42,7 @@ namespace SequenceStudioPowerShell
         private SwitchParameter _reverse;
 
 
-        [Parameter(Mandatory =true,ParameterSetName ="DNA", 
+        [Parameter(Mandatory = false,ParameterSetName ="DNA", 
             ValueFromPipeline = false,
             HelpMessage = "Choose -Compliment (-c) to create a new DNA object based upon the Compliment strand of this DNA object. Use this together with the -Reverse switch (-r) to create a new DNA object based upon the ReverseCompliment strand of this DNA object.")]
         [Alias("c")]
@@ -56,7 +56,7 @@ namespace SequenceStudioPowerShell
 
         protected override void ProcessRecord()
         {
-            if(this.ParameterSetName == "String")
+            if(this.ParameterSetName == "Stand")
             {
                 WriteObject(new DNA(_strand));
             }

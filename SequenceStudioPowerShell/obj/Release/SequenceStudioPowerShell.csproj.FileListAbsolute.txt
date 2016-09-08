@@ -1,6 +1,6 @@
-C:\Users\JAMES\Documents\WindowsPowerShell\Modules\SequenceStudioPowerShell\1.0.0.0\SequenceStudioPowerShell.XML
 C:\Users\JAMES\Documents\WindowsPowerShell\Modules\SequenceStudioPowerShell\1.0.0.0\SequenceStudioPowerShell.dll
 C:\Users\JAMES\Documents\WindowsPowerShell\Modules\SequenceStudioPowerShell\1.0.0.0\SequenceStudioPowerShell.pdb
+C:\Users\JAMES\Documents\WindowsPowerShell\Modules\SequenceStudioPowerShell\1.0.0.0\SequenceStudioPowerShell.XML
 C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\SequenceStudioPowerShell\obj\Release\SequenceStudioPowerShell.csprojResolveAssemblyReference.cache
 C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\SequenceStudioPowerShell\obj\Release\SequenceStudioPowerShell.dll
 C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\SequenceStudioPowerShell\obj\Release\SequenceStudioPowerShell.pdb
