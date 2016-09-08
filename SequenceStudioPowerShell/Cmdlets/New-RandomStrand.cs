@@ -46,6 +46,7 @@ namespace SequenceStudioPowerShell
 
         protected override void ProcessRecord()
         {
+
             switch (Type)
             {
                 case "DNA":

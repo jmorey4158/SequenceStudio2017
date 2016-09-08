@@ -1,0 +1,14 @@
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\bin\Release\UnitTestSequenceStudio.dll.config
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\bin\Release\UnitTestSequenceStudio.dll
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\bin\Release\UnitTestSequenceStudio.pdb
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\bin\Release\EntityFramework.dll
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\bin\Release\SequenceStudio.dll
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\bin\Release\SequenceStudio.pdb
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\bin\Release\EntityFramework.xml
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\obj\Release\UnitTestSequenceStudio.csprojResolveAssemblyReference.cache
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\obj\Release\UnitTestSequenceStudio.dll
+C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\UnitTestSequenceStudio\obj\Release\UnitTestSequenceStudio.pdb
