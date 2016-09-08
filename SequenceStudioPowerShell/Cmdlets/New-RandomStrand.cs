@@ -3,8 +3,9 @@ using SequenceStudio;
 
 namespace SequenceStudioPowerShell
 {
-    [Cmdlet(VerbsCommon.New, "RandomStrand")]
-    [Alias("ghash")]
+    [Cmdlet(VerbsCommon.New, "RandomStrand",
+        SupportsShouldProcess = false)]
+    [Alias("rand")]
     public class NewRandomStrandCmdlet : PSCmdlet
     {
 
