@@ -32,7 +32,7 @@ namespace SequenceStudio
             var matches = new Dictionary<int, int>();
 
 
-            // TODO: Implement 'FindExactMatches' 
+            // TODO: Implement 'FindExactMatches()' 
 
             return new Match(SequenceEnums.MatchType.ExactMatch, template.SequenceType, to, po, 
                 template.StrandHash, pattern.StrandHash, threshold, matches);

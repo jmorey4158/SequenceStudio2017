@@ -115,7 +115,7 @@ namespace SequenceStudio
         {
             var len = (s.Length / 3);
             var dArray = new decimal[len];
-            // TODO: Complete implementation
+            // TODO: Complete implementation of CalcCodonMolWeight(string s)
 
             return dArray;
         }

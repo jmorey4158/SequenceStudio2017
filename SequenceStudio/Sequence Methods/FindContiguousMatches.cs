@@ -30,7 +30,9 @@ namespace SequenceStudio
             SequenceEnums.SequenceOriginType to, SequenceEnums.SequenceOriginType po, int threshold)
         {
             // TODO: Properly comment FindContiguousMatches()
+
             // TODO: Test FindContiguousMatches() implementation for accuracy and performance
+
             string tem = template.Strand; // The Strand of the 'template'.
             string pat = pattern.Strand;
             Dictionary<int, int> matches = new Dictionary<int, int>();
