@@ -22,7 +22,7 @@ namespace SequenceStudio
 
         #region Data Members
         [DataMember]
-        public Dictionary<int, string> ResidueStatistics { get; private set; }
+        public Dictionary<string, int> ResidueStatistics { get; private set; }
 
         [DataMember]
         public decimal MolecularWeight { get; private set; }

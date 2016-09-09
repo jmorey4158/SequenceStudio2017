@@ -20,7 +20,7 @@ namespace SequenceStudio
 
     public interface ISequenceMetadata
     {
-        Dictionary<int, string> ResidueStatistics { get; }
+        Dictionary<string, int> ResidueStatistics { get; }
         decimal MolecularWeight { get; }
         int StrandLength { get; }
     }
