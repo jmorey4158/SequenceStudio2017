@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cmdlets\Find-SequenceMatch.cs" />
+    <Compile Include="Cmdlets\Get-CodonCount.cs" />
     <Compile Include="Cmdlets\Get-MolWeight.cs" />
     <Compile Include="Cmdlets\Get-SequenceHash.cs" />
     <Compile Include="Cmdlets\Get-Translation.cs" />
