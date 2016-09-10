@@ -36,7 +36,7 @@ namespace SequenceStudioPowerShell
         [Parameter(Mandatory = true,
             ValueFromPipeline = true,
             HelpMessage = "Specify the ratios of the residues in the result.")]
-        [Alias("l")]
+        [Alias("p")]
         [ValidateRange(1, int.MaxValue)]
         public string Pattern
         {

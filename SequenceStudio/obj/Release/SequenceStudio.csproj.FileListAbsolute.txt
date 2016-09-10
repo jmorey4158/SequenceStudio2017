@@ -7,4 +7,3 @@ C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Stu
 C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\SequenceStudio\bin\Release\EntityFramework.SqlServer.xml
 C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\SequenceStudio\obj\Release\SequenceStudio.dll
 C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\SequenceStudio\obj\Release\SequenceStudio.pdb
-C:\Users\JAMES\Documents\Visual Studio 2015\Projects\SequenceStudio\Sequence-Studio-2017\SequenceStudio\obj\Release\SequenceStudio.csprojResolveAssemblyReference.cache

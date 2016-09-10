@@ -72,6 +72,7 @@
     <Compile Include="EF Classes\SequenceDB.cs" />
     <Compile Include="NCBI Methods\ParseFastaFile.cs" />
     <Compile Include="NCBI Methods\ParseFastaXml.cs" />
+    <Compile Include="Sequence Methods\GetCodonCount.cs" />
     <Compile Include="Sequence Methods\GetTranslation.cs" />
     <Compile Include="Sequence Methods\PopulateOrfs.cs" />
     <Compile Include="Sequence Methods\ValidateSequence.cs" />
