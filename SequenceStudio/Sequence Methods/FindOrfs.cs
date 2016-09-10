@@ -10,18 +10,18 @@ namespace SequenceStudio
     public static partial class SequenceMethods
     {
 
-        public static List<KeyValuePair<int, int>> FindOrfs(DNA d)
+        public static List<Orf> FindOrfs(DNA d)
         {
-            // TODO: Add implementation GetOrfs(DNA d)
-            return new List<KeyValuePair<int, int>>();
+            string seq = d.Strand;
+            // TODO: Add implementation FindOrfs(DNA d)
+            return new List<Orf>();
         }
 
-        public static List<KeyValuePair<int, int>> FindOrfs(RNA r)
+        public static List<Orf> FindOrfs(RNA r)
         {
-            // TODO: Add implementation GetOrfs(RNA r)
-            return new List<KeyValuePair<int, int>>();
+            string seq = r.Strand;
+            // TODO: Add implementation FindOrfs(RNA r)
+            return new List<Orf>();
         }
     }
-
-
 }

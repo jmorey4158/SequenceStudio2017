@@ -141,8 +141,6 @@ namespace SequenceStudioPowerShell
         #endregion
 
 
-
-
         // ProcessRecord =========================================
         protected override void ProcessRecord()
         {

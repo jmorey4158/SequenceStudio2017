@@ -11,7 +11,7 @@ namespace SequenceStudio
     {
         public static IMatch GetDbMatch(string id)
         {
-            //This is mockedup to get me by for now. Later, add DatabaseMethods to get real stuff.
+            //This is mocked up to get me by for now. Later, add DatabaseMethods to get real stuff.
             var mt = SequenceEnums.MatchType.ExactMatch;
             var tt = SequenceEnums.SequenceType.DNA;
             var to = SequenceEnums.SequenceOriginType.Manual;

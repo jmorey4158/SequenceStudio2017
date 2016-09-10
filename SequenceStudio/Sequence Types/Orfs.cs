@@ -8,6 +8,17 @@ using System.Threading.Tasks;
 namespace SequenceStudio
 {
     [DataContract]
+    public class Orf
+    {
+        public Orf() { }
+
+        public int Locus { get; set; }
+        public int Length { get; set; }
+
+    }
+
+
+    [DataContract]
     public class OrfList
     {
         #region Constructors
@@ -16,13 +27,13 @@ namespace SequenceStudio
 
         public OrfList(DNA d)
         {
-            Source = d.StrandHash;
+            SourceHash = d.StrandHash;
             List = SequenceMethods.FindOrfs(d);
         }
 
         public OrfList(RNA r)
         {
-            Source = r.StrandHash;
+            SourceHash = r.StrandHash;
             List = SequenceMethods.FindOrfs(r);
         }
 
@@ -30,10 +41,10 @@ namespace SequenceStudio
 
         #region Data Members
         [DataMember]
-        public string Source { get; set; }
+        public string SourceHash { get; set; }
 
         [DataMember]
-        public List<KeyValuePair<int, int>> List { get; set; }
+        public List<Orf> List { get; set; }
 
         #endregion
     }
@@ -48,7 +59,7 @@ namespace SequenceStudio
 
         public OrfDictionary(OrfList o)
         {
-            Source = o.Source;
+            Source = o.SourceHash;
             Dictionary = SequenceMethods.PopulateOrfs(o);
         }
 

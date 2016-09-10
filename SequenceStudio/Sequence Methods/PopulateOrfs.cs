@@ -13,7 +13,7 @@ namespace SequenceStudio
         public static Dictionary<int, string> PopulateOrfs(OrfList orfs)
         {
             var olist = orfs.List;
-            var source = orfs.Source;
+            var source = orfs.SourceHash;
 
             // TODO: Add implementation PopulateOrfs(OrfList orfs)
             return new Dictionary<int, string>();
