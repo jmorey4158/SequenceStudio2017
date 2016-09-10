@@ -11,6 +11,8 @@ namespace SequenceStudio
     public class Match : IMatch
     {
         #region Constructors
+
+        public Match() { }
         public Match(SequenceEnums.MatchType mt, SequenceEnums.SequenceType st, SequenceEnums.SequenceOriginType to,
             SequenceEnums.SequenceOriginType po, string tId, string pId, int t, Dictionary<int, int> ms)
         {

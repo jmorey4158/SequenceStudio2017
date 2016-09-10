@@ -7,6 +7,8 @@ namespace SequenceStudioPowerShell
     public class FindSequenceMatchCmdlet : PSCmdlet
     {
         #region Parameters
+        private ISequence _seq1;
+        private ISequence _seq2;
 
         // DNA Parameter set
         [Parameter(Mandatory = true,
@@ -16,9 +18,8 @@ namespace SequenceStudioPowerShell
         [Alias("d1")]
         public DNA Dna1
         {
-            set { _dna1 = value; }
+            set { _seq1 = value; }
         }
-        private DNA _dna1;
 
         [Parameter(Mandatory = true,
             ValueFromPipeline = true,
@@ -27,9 +28,8 @@ namespace SequenceStudioPowerShell
         [Alias("d2")]
         public DNA Dna2
         {
-            set { _dna2 = value; }
+            set { _seq2 = value; }
         }
-        private DNA _dna2;
 
 
         // RNA Parameter set =============================================
@@ -40,9 +40,8 @@ namespace SequenceStudioPowerShell
         [Alias("r1")]
         public RNA Rna1
         {
-            set { _rna1 = value; }
+            set { _seq1 = value; }
         }
-        private RNA _rna1;
 
         [Parameter(Mandatory = true,
             ValueFromPipeline = true,
@@ -51,9 +50,8 @@ namespace SequenceStudioPowerShell
         [Alias("r2")]
         public RNA Rna2
         {
-            set { _rna2 = value; }
+            set { _seq2 = value; }
         }
-        private RNA _rna2;
 
 
 
@@ -65,9 +63,8 @@ namespace SequenceStudioPowerShell
         [Alias("p1")]
         public Polypeptide Poly1
         {
-            set { _poly1 = value; }
+            set { _seq1 = value; }
         }
-        private Polypeptide _poly1;
 
         [Parameter(Mandatory = true,
             ValueFromPipeline = true,
@@ -76,9 +73,8 @@ namespace SequenceStudioPowerShell
         [Alias("p2")]
         public Polypeptide Poly2
         {
-            set { _poly2 = value; }
+            set { _seq2 = value; }
         }
-        private Polypeptide _poly2;
 
 
         // THIS PARAMETER SET REMOVED DUE TO COMPLEXITY -- USER CASE NOT STRONG ENOUGH  
@@ -120,22 +116,23 @@ namespace SequenceStudioPowerShell
 
 
         // Additional parameters
+
+
         [Parameter(Mandatory = false,
         ValueFromPipeline = false,
         HelpMessage = "Use this value to specify the minimum length the 'Contiguous Match'.")]
-        [ValidateRange(10, int.MaxValue)]
-        public int Contiguous
+        public SwitchParameter Contiguous
         {
             set { _contig = value; }
         }
-        private int _contig;
+        private SwitchParameter _contig;
 
 
         [Parameter(Mandatory = false,
         ValueFromPipeline = false,
         HelpMessage = "Specify the percentage match threshold that the percentage match must meet or exceed to be valid. You must also provide a 'threshold' value between 10-100%.")]
         [ValidateRange(10, 100)]
-        public int Percentage
+        public int Threshold
         {
             set { _thold = value; }
         }
@@ -149,91 +146,31 @@ namespace SequenceStudioPowerShell
         // ProcessRecord =========================================
         protected override void ProcessRecord()
         {
-            switch (this.ParameterSetName)
+            if(_contig)
             {
-                case "DNA":
-                    if(_contig > 0)
-                    {
-                        WriteObject(SequenceMethods.FindMatches(
-                            _dna1, _dna2, _dna1.SequenceOriginType,
-                            _dna2.SequenceOriginType, _thold, SequenceEnums.MatchType.ContiguousMatch));
-                    }
-                    else if(_thold == 100)
-                    {
-                        WriteObject(SequenceMethods.FindMatches(
-                            _dna1, _dna2, _dna1.SequenceOriginType,
-                            _dna2.SequenceOriginType, _thold, SequenceEnums.MatchType.ExactMatch));
-                    }
-                    else if (10 <= _thold || _thold <= 99)
-                    {
-                        WriteObject(SequenceMethods.FindMatches(
-                            _dna1, _dna2, _dna1.SequenceOriginType,
-                            _dna2.SequenceOriginType, _thold, SequenceEnums.MatchType.PercentageMatch));
-                    }
-                    else
-                    {
-                        // Throw error
-                    }
-                    break;
-
-
-
-                case "RNA":
-                    if (_contig > 0)
-                    {
-                        WriteObject(SequenceMethods.FindMatches(
-                            _rna1, _rna2, _rna1.SequenceOriginType,
-                            _rna2.SequenceOriginType, _thold, SequenceEnums.MatchType.ContiguousMatch));
-                    }
-                    else if (_thold == 100)
-                    {
-                        WriteObject(SequenceMethods.FindMatches(
-                            _rna1, _rna2, _rna1.SequenceOriginType,
-                            _rna2.SequenceOriginType, _thold, SequenceEnums.MatchType.ExactMatch));
-                    }
-                    else if (10 <= _thold || _thold <= 99)
-                    {
-                        WriteObject(SequenceMethods.FindMatches(
-                            _rna1, _rna2, _rna1.SequenceOriginType,
-                            _rna2.SequenceOriginType, _thold, SequenceEnums.MatchType.PercentageMatch));
-                    }
-                    else
-                    {
-                        // Throw error
-                    }
-                    break;
-
-
-
-                case "Poly":
-                    if (_contig > 0)
-                    {
-                        WriteObject(SequenceMethods.FindMatches(
-                            _poly1, _poly2, _poly1.SequenceOriginType,
-                            _poly2.SequenceOriginType, _thold, SequenceEnums.MatchType.ContiguousMatch));
-                    }
-                    else if (_thold == 100)
-                    {
-                        WriteObject(SequenceMethods.FindMatches(
-                            _poly1, _poly2, _poly1.SequenceOriginType,
-                            _poly2.SequenceOriginType, _thold, SequenceEnums.MatchType.ExactMatch));
-                    }
-                    else if (10 <= _thold || _thold <= 99)
-                    {
-                        WriteObject(SequenceMethods.FindMatches(
-                            _poly1, _poly2, _poly1.SequenceOriginType,
-                            _poly2.SequenceOriginType, _thold, SequenceEnums.MatchType.PercentageMatch));
-                    }
-                    else
-                    {
-                        // WriteError
-                    }
-                    break;
-
-
-                default:
-                    break;
+                WriteObject(SequenceMethods.FindMatches(
+                    _seq1, _seq2, _seq1.SequenceOriginType,
+                    _seq2.SequenceOriginType, _thold, 
+                    SequenceEnums.MatchType.ContiguousMatch));
             }
-        }
+            else if(_thold >= 100)
+            {
+                WriteObject(SequenceMethods.FindMatches(
+                    _seq1, _seq2, _seq1.SequenceOriginType,
+                    _seq2.SequenceOriginType, _thold, 
+                    SequenceEnums.MatchType.ExactMatch));
+            }
+            else if (10 <= _thold || _thold <= 99)
+            {
+                WriteObject(SequenceMethods.FindMatches(
+                    _seq1, _seq2, _seq1.SequenceOriginType,
+                    _seq2.SequenceOriginType, _thold, 
+                    SequenceEnums.MatchType.PercentageMatch));
+            }
+            else
+            {
+                // Throw error
+            }       
+        }    
     }
 }
