@@ -61,7 +61,7 @@ namespace SequenceStudioPowerShell
         [Parameter(Mandatory = true,
             ValueFromPipeline = true,
             ParameterSetName = "Poly",
-            HelpMessage = "Enter the first (of two) valid SequenceStudio.RNA class instance.")]
+            HelpMessage = "Enter the first (of two) valid SequenceStudio.Polypeptide class instance.")]
         [Alias("p1")]
         public Polypeptide Poly1
         {
@@ -71,8 +71,8 @@ namespace SequenceStudioPowerShell
 
         [Parameter(Mandatory = true,
             ValueFromPipeline = true,
-            ParameterSetName = "DNA",
-            HelpMessage = "Enter the second (of two) valid SequenceStudio.RNA class instance.")]
+            ParameterSetName = "Poly",
+            HelpMessage = "Enter the second (of two) valid SequenceStudio.Polypeptide class instance.")]
         [Alias("p2")]
         public Polypeptide Poly2
         {
@@ -122,19 +122,20 @@ namespace SequenceStudioPowerShell
         // Additional parameters
         [Parameter(Mandatory = false,
         ValueFromPipeline = false,
-        HelpMessage = "Use this switch to choose the 'Contiguous Match' criteria. You must also provide a 'threshold' value between 10-100%.")]
-        public SwitchParameter Contiguous
+        HelpMessage = "Use this value to specify the minimum length the 'Contiguous Match'.")]
+        [ValidateRange(10, int.MaxValue)]
+        public int Contiguous
         {
             set { _contig = value; }
         }
-        private SwitchParameter _contig;
+        private int _contig;
 
 
         [Parameter(Mandatory = false,
         ValueFromPipeline = false,
         HelpMessage = "Specify the percentage match threshold that the percentage match must meet or exceed to be valid. You must also provide a 'threshold' value between 10-100%.")]
         [ValidateRange(10, 100)]
-        public int Threshold
+        public int Percentage
         {
             set { _thold = value; }
         }
@@ -151,7 +152,7 @@ namespace SequenceStudioPowerShell
             switch (this.ParameterSetName)
             {
                 case "DNA":
-                    if(_contig)
+                    if(_contig > 0)
                     {
                         WriteObject(SequenceMethods.FindMatches(
                             _dna1, _dna2, _dna1.SequenceOriginType,
@@ -178,7 +179,7 @@ namespace SequenceStudioPowerShell
 
 
                 case "RNA":
-                    if (_contig)
+                    if (_contig > 0)
                     {
                         WriteObject(SequenceMethods.FindMatches(
                             _rna1, _rna2, _rna1.SequenceOriginType,
@@ -205,7 +206,7 @@ namespace SequenceStudioPowerShell
 
 
                 case "Poly":
-                    if (_contig)
+                    if (_contig > 0)
                     {
                         WriteObject(SequenceMethods.FindMatches(
                             _poly1, _poly2, _poly1.SequenceOriginType,
