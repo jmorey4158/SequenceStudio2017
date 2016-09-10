@@ -54,10 +54,10 @@ namespace SequenceStudio
         public SequenceEnums.SequenceType SequenceType { get; }
 
         [DataMember]
-        public SequenceEnums.SequenceOriginType TemplateType { get; }
+        public SequenceEnums.SequenceOriginType TemplateOrigin { get; }
 
         [DataMember]
-        public SequenceEnums.SequenceOriginType PatternType { get; }
+        public SequenceEnums.SequenceOriginType PatternOrigin { get; }
 
         [DataMember]
         public string TemplateID { get;}

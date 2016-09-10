@@ -21,8 +21,8 @@ namespace SequenceStudio
     {
         string ID { get; }
         SequenceEnums.SequenceType SequenceType { get; }
-        SequenceEnums.SequenceOriginType TemplateType { get; }
-        SequenceEnums.SequenceOriginType PatternType { get; }
+        SequenceEnums.SequenceOriginType TemplateOrigin { get; }
+        SequenceEnums.SequenceOriginType PatternOrigin { get; }
         SequenceEnums.MatchType MatchType { get; }
         string TemplateID { get; }
         string PatternID { get; }
