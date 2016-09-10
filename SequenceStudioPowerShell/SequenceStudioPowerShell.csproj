@@ -55,6 +55,7 @@
     <Compile Include="Cmdlets\Get-SequenceHash.cs" />
     <Compile Include="Cmdlets\Get-Translation.cs" />
     <Compile Include="Cmdlets\New-DNA.cs" />
+    <Compile Include="Cmdlets\New-RandomDopedStrand.cs" />
     <Compile Include="Cmdlets\New-SequenceMetadata.cs" />
     <Compile Include="Cmdlets\New-RandomStrand.cs" />
     <Compile Include="Cmdlets\New-Polypeptide.cs" />
