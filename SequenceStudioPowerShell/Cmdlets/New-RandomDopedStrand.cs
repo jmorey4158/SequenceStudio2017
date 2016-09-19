@@ -37,7 +37,6 @@ namespace SequenceStudioPowerShell
             ValueFromPipeline = true,
             HelpMessage = "Specify the ratios of the residues in the result.")]
         [Alias("p")]
-        [ValidateRange(1, int.MaxValue)]
         public string Pattern
         {
             get { return _pattern; }
@@ -54,15 +53,36 @@ namespace SequenceStudioPowerShell
             switch (Type)
             {
                 case "DNA":
-                    WriteObject(SequenceMethods.GenerateRandomDopedStrand(_len, SequenceEnums.SequenceType.DNA, _pattern));
+                    if(SequenceMethods.ValidateSequence(_pattern, SequenceEnums.SequenceType.DNA))
+                    {
+                        WriteObject(SequenceMethods.GenerateRandomDopedStrand(_len, SequenceEnums.SequenceType.DNA, _pattern));
+                    }
+                    else
+                    {
+                        // Throw error
+                    }
                     break;
 
                 case "RNA":
-                    WriteObject(SequenceMethods.GenerateRandomDopedStrand(_len, SequenceEnums.SequenceType.RNA, _pattern));
+                    if (SequenceMethods.ValidateSequence(_pattern, SequenceEnums.SequenceType.RNA))
+                    {
+                        WriteObject(SequenceMethods.GenerateRandomDopedStrand(_len, SequenceEnums.SequenceType.RNA, _pattern));
+                    }
+                    else
+                    {
+                        // Throw error
+                    }
                     break;
 
                 case "Poly":
-                    WriteObject(SequenceMethods.GenerateRandomDopedStrand(_len, SequenceEnums.SequenceType.Polypeptide, _pattern));
+                    if (SequenceMethods.ValidateSequence(_pattern, SequenceEnums.SequenceType.Polypeptide))
+                    {
+                        WriteObject(SequenceMethods.GenerateRandomDopedStrand(_len, SequenceEnums.SequenceType.Polypeptide, _pattern));
+                    }
+                    else
+                    {
+                        // Throw error
+                    }
                     break;
 
 

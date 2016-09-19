@@ -1,5 +1,7 @@
 ﻿using System.Management.Automation;
 using SequenceStudio;
+using System.Collections.Generic;
+using System;
 
 namespace SequenceStudioPowerShell
 {
@@ -144,31 +146,31 @@ namespace SequenceStudioPowerShell
         // ProcessRecord =========================================
         protected override void ProcessRecord()
         {
-            if(_contig)
+            if (_contig)
             {
                 WriteObject(SequenceMethods.FindMatches(
                     _seq1, _seq2, _seq1.SequenceOriginType,
-                    _seq2.SequenceOriginType, _thold, 
+                    _seq2.SequenceOriginType, _thold,
                     SequenceEnums.MatchType.ContiguousMatch));
             }
-            else if(_thold >= 100)
+            else if (_thold >= 100)
             {
                 WriteObject(SequenceMethods.FindMatches(
                     _seq1, _seq2, _seq1.SequenceOriginType,
-                    _seq2.SequenceOriginType, _thold, 
+                    _seq2.SequenceOriginType, _thold,
                     SequenceEnums.MatchType.ExactMatch));
             }
             else if (10 <= _thold || _thold <= 99)
             {
                 WriteObject(SequenceMethods.FindMatches(
                     _seq1, _seq2, _seq1.SequenceOriginType,
-                    _seq2.SequenceOriginType, _thold, 
+                    _seq2.SequenceOriginType, _thold,
                     SequenceEnums.MatchType.PercentageMatch));
             }
             else
             {
                 // Throw error
-            }       
+            }
         }    
     }
 }

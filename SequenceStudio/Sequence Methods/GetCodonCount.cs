@@ -17,7 +17,6 @@ namespace SequenceStudio
         /// the <paramref name="s"/>.</returns>
         /// <remarks>This methods instantiates a CodonMatrix and uses that to 
         /// match with the <paramref name="s"/>.</remarks>
-
         public static Dictionary<String, Int32> CodonCount(DNA d)
         {
             Dictionary<string, int> list = new Dictionary<string, int>();
