@@ -33,7 +33,8 @@ namespace SequenceStudio
 
             // TODO: Implement FindPercentageMatches()
 
-            return new Match(SequenceEnums.MatchType.PercentageMatch, template.SequenceType, to, po, template.StrandHash, pattern.StrandHash, threshold, matches);
+            return new Match(SequenceEnums.MatchType.PercentageMatch, template.SequenceType, to, po, 
+                template.StrandHash, pattern.StrandHash, threshold, matches);
         }
     }
 }
