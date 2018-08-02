@@ -29,8 +29,7 @@ namespace SequenceStudio
         public static string neg_regexAAshort = "[^ACDEFGHIKLMNPQRSTVWY]";
 
 
-        public static string s_regexAAlong = "(Ala|Cys|Asp|Glu|Phe|Gly|His|Ile|Lys|Leu|" +
-                    "Met|Asn|Pro|Gln|Arg|Ser|Thr|Val|Trp|Tyr)";
+        public static string s_regexAAlong = "(Ala|Cys|Asp|Glu|Phe|Gly|His|Ile|Lys|Leu|Met|Asn|Pro|Gln|Arg|Ser|Thr|Val|Trp|Tyr)";
 
         public static string s_regexStopCodon = "(TAG|TAA|TGA)";
 

@@ -13,11 +13,8 @@ namespace SequenceStudio
 
         public static String[] s_RNA = new String[4] { "A", "U", "C", "G" };
 
-        public static String[] s_Polypeptide = new String[20] { "A", "R", "N", "D",
-                                                                    "C", "E", "Q", "G",
-                                                                    "H", "I", "L", "K",
-                                                                    "M", "F", "P", "S",
-                                                                    "T", "W", "Y", "V"};
+        public static String[] s_Polypeptide = new String[20] { "A", "R", "N", "D", "C", "E", "Q", "G", "H", "I", 
+            "L", "K", "M", "F", "P", "S", "T", "W", "Y", "V"};
 
 
         public static String p_DNA = "ACTG";
